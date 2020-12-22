@@ -1,0 +1,534 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+#logo{
+    display:flex;
+    align-items:center;
+    margin:-10px 14px;
+    
+}
+#logo img{
+    height: 42px;
+    /* margin-left: -466px; */
+}
+#navbar{
+    /* background-color: #1D1D1F; */
+    background-color: whitesmoke;
+    padding: 13px 4px;
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+#navbar li{
+    list-style: none;
+    
+}
+#navbar li a{
+    color: black ;
+    text-decoration: none;
+    /* font-weight: bold; */
+    font-size: large;
+    
+    padding: 7px 12px;
+    margin: 7px 12px;
+
+}
+#navbar li a:hover{
+    color:black;
+    font-style: italic;
+
+}
+#introSection{
+    height: 300px;
+    color: #3bb1ff;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: cursive;
+    background-color: rgba(25, 219, 219, 0.774);
+    height: 675px;
+    background: center / cover no-repeat url("../static/matblackwallpaper4.jpg");
+
+    
+    
+}.contentSectionBody{ 
+    background-image: url('../static/matblackwallpaper1.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.contentSection .container{
+    /* color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    width: 1100px;
+
+}
+.contentSection .container .card{
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin: 20px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+
+}
+/* to show or hide  */
+.contentSection .container .card.hide{
+    display: none;
+}
+.contentSection .container .card.show{
+    display: block;
+	animation: show .5s ease;
+}
+@keyframes show{
+    0%{
+        opacity:0;
+    	transform: scale(0.9);
+    }
+    100%{
+        opacity:1;
+    	transform: scale(1);
+    }
+    
+    /* to show or hide  */
+}
+.contentSection .container .card .box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 1s ease;
+}
+.contentSection .container .card:hover .box{
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+.contentSection .container .card .box .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+.contentSection .container .card .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.contentSection .container .card .box .contentBox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1D1D1F;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    
+    
+}
+.contentSection .container .card .box .contentBox div{
+    transform-style: preserve-3d;
+    padding: 20px;
+    background: linear-gradient(45deg,#fe0061,#3bb1ff);
+    transform: translateZ(100px);
+
+}
+.contentSection .container .card .box .contentBox div h2{
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.contentSection .card .box .contentBox div h2 p{
+    color: #fff;
+    font-size: 16px;
+}
+#sponsorSection{
+    
+        background-image: url('../static/matblackwallpaper2.jpg');
+        display: flex;
+        color: #3bb1ff;
+        justify-content: center;
+        /* align-items: center; */
+        min-height: 100vh;
+    
+    
+    
+}
+
+/* paging section below */
+
+.contentSection .container .pagination{
+	width: 100%;
+	float: left;
+	padding:15px;
+	text-align: center;
+}
+.contentSection .container .pagination div{
+	display: inline-block;
+	margin:0 10px;
+}
+.contentSection .container .pagination .page{
+	color:red;
+}
+.contentSection .container .pagination .prev,.contentSection .container .pagination .next{
+ color:white;
+ background-color: #3bb1ff;
+ border:1px solid #000;
+ font-size:15px;
+ padding:7px 15px;
+ cursor: pointer;
+}
+
+.contentSection .container .pagination .prev.disabled,.contentSection .container .pagination .next.disabled{
+	border-color: gray;
+	color:gray;
+	pointer-events: none;
+}
+
+
+/* paging section above */
+
+
+
+ #footer{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#fe0061;
+    /* width: 100%; */
+
+
+ } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* below lies the media querry */
+
+@media(min-width:100px) and (max-width: 1000px){
+
+    *{
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+    }
+    
+    
+    #logo
+    {
+        display:flex;
+        align-items:center;
+        margin:-10px 14px;
+        font-size: 16px;
+    
+            
+    }
+    #logo img
+    {
+        height: 42px;
+            /* margin-left: -466px; */
+    }
+    #navbar{
+            /* background-color: #1D1D1F; */
+        background-color: whitesmoke;
+        padding: 42px 20px;
+        width: 65rem;
+    }
+        
+    #navbar ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+            
+    }
+        #navbar li{
+        list-style: none;
+            
+        }
+        #navbar li a{
+            color: black ;
+            text-decoration: none;
+            /* font-weight: bold; */
+            font-size: 25px;
+            
+            padding: 7px 12px;
+            margin: 7px 12px;
+        
+        }
+        #navbar li a:hover{
+            color:black;
+            font-style: italic;
+        
+        }
+        #introSection{
+            height: 300px;
+            /* color: #3bb1ff; */
+            color: black;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 40px;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            font-family: cursive;
+            background-color: rgba(25, 219, 219, 0.774);
+            height: 675px;
+            width: 65rem;
+            background: center / cover no-repeat url("../static/matblackwallpaper4.jpg");
+        
+            
+            
+        }
+        #introSection .small
+        {
+            font-size: 35px;    
+        }
+        .contentSectionBody{ 
+            background-image: url('../static/matblackwallpaper1.jpg');
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            width: 65rem;
+        
+        }
+        
+        .contentSection .container{
+            /* color: black; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            transform-style: preserve-3d;
+            width: 60rem;
+            height: 150rem;
+        
+        }
+        .contentSection .container .card{
+            position: relative;
+            width: 320px;
+            height: 320px;
+            margin: 20px;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        
+        }
+        /* to show or hide  */
+        .contentSection .container .card.hide{
+            display: none;
+        }
+        .contentSection .container .card.show{
+            display: block;
+            animation: show .5s ease;
+        }
+        @keyframes show{
+            0%{
+                opacity:0;
+                transform: scale(0.9);
+            }
+            100%{
+                opacity:1;
+                transform: scale(1);
+            }
+            
+            /* to show or hide  */
+        }
+        .contentSection .container .card .box{
+            position: absolute;
+            top: 0px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: 1s ease;
+        }
+        .contentSection .container .card:hover .box{
+            transform: rotateY(180deg);
+            cursor: pointer;
+        }
+        
+        .contentSection .container .card .box .imgBx{
+            position: absolute;
+            top: 50px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        
+        }
+        .contentSection .container .card .box .imgBx img{
+            position: absolute;
+            top: -50px;
+            left: -165px;
+            width: 40rem;
+            height: 100%;
+            object-fit: cover;
+        
+        }
+        
+        .contentSection .container .card .box .contentBox{
+            position: absolute;
+            top: 0px;
+            left: -165px;
+            width: 40rem;
+            height: 100%;
+            background: #1D1D1F;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform-style: preserve-3d;
+            transform: rotateY(180deg);
+            
+            
+        }
+        .contentSection .container .card .box .contentBox div{
+            transform-style: preserve-3d;
+            padding: 20px;
+            height: 180px;
+            background: linear-gradient(45deg,#fe0061,#3bb1ff);
+            transform: translateZ(100px);
+        
+        }
+        .contentSection .container .card .box .contentBox div h2{
+            color: #fff;
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+        .contentSection .card .box .contentBox div h2 p{
+            color: #fff;
+            font-size: 16px;
+        }
+        
+        #sponsorSection{
+            
+            background-image: url('../static/matblackwallpaper2.jpg');
+            display: flex;
+            /* justify-content: center; */
+            color: #3bb1ff;
+            align-items: center;
+            min-height: 100vh;
+            width: 65rem;
+            
+            
+            
+        }
+        
+
+        /* paging section below */
+        
+        .contentSection .container .pagination{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            float: left;
+            padding: 15px;
+            text-align: center;
+        }
+        .contentSection .container .pagination div{
+            display: inline-block;
+            margin:0 10px;
+        }
+        .contentSection .container .pagination .page{
+            color:red;
+            font-size: 35px;
+        }
+        .contentSection .container .pagination .prev{
+         color:white;
+         background-color: #3bb1ff;
+         border:1px solid #000;
+         border-radius: 16px;
+         font-size: 30px;
+         padding:7px 15px;
+         cursor: pointer;
+         margin-right: auto;
+        }
+
+        .contentSection .container .pagination .next
+        {
+            color:white;
+            background-color: #3bb1ff;
+            border:1px solid #000;
+            border-radius: 16px;
+            font-size: 30px;
+            padding:7px 16px;
+            display: flex;
+            
+            cursor: pointer;
+            margin-left: auto;
+           }
+
+        
+        
+        .contentSection .container .pagination .prev.disabled,.contentSection .container .pagination .next.disabled
+        {
+            border-color: gray;
+            color:gray;
+            pointer-events: none;
+        }
+        
+        
+        /* paging section above */
+        
+        
+        
+         #footer{
+            font-size: 25px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color:#fe0061;
+            width: 65rem;
+        
+        
+         } 
+        
+        }
+    

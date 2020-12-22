@@ -1,0 +1,83 @@
+extends ../base.pug
+
+
+block scripts
+//-   script(src='../static/javaScriptFiles/homePage.js')
+
+block style
+    style
+        include ../../static/card1Style/card1.css
+        
+        
+        
+        
+
+block content
+
+
+
+   section#introSection
+
+
+   section.contentSectionBody
+
+
+        .contentSection
+            .container
+                h1 Why you should code
+                .group
+                    input#1(type='checkbox')
+                    label(for='1') Coding Improves Your Problem Solving Skills. Don't Belive Me Try <a href="https://www.hackerrank.com" target="_blank">HackerRank</a> OR <a href="https://www.codeforces.com" target="_blank ">CodeForces</a>
+                      
+                    
+                .group
+                    input#2(type='checkbox')
+                    label(for='2') Its An Undeniable Fact That " Automation "Is The Future.Just ThinkOf The Fact How Education Is A Must As Compared To Years Back
+                .group
+                    input#3(type='checkbox')
+                    label(for='3') You Can Convert Your Idea Into Reality. Now "You Can Be Your Boss".
+                .group
+                    input#4(type='checkbox')
+                    label(for='4') It Improves Your Interpersonal Skills And Communication Skills. And "That Makes Us Different From Animals"
+                .group
+                    input#5(type='checkbox')
+                    label(for='5') It improves Job Opertunities.
+                .group
+                    input#6(type='checkbox')
+                    label(for='6') And At The Last If U Are Still Jobless.U Could Be A Handsome "Freelancer".Dont Believe Me Just Check <a href="https://www.freelancer.com" target="_blank ">Freelancer</a> OR <a href="https://www.upwork.com" target="_blank ">UpWork</a>
+
+
+
+     
+
+      
+
+  
+
+      
+
+  
+   
+
+   section.sponsorSection
+            h1| Source
+            .container
+              .card
+                .box(onclick="window.location.href='https://youtu.be/eugNlBrFZ1g'")
+                    .imgBx
+                        img(src='../static/card1Style/loveBabbar.jpg' alt="sponsorSection")
+                    .contentBox
+                         div
+                            h2 LoveBabbar
+                            p
+                              | Software Engineer At Amazon India
+      
+//- block scripts
+//-     //- script(src='../static/index.js')
+//-     script
+//-       include ../static/index.js      
+
+
+
+
+
